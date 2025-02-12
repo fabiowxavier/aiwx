@@ -5,8 +5,8 @@ module.exports = {
     './about.html',
     './contact.html',
     './src/**/*.{html,js}',
-    './header.html',
-    './footer.html',
+    './src/components/header.html',
+    './src/components/footer.html',
   ],
   theme: {
     extend: {},
