@@ -6,7 +6,7 @@ module.exports = {
     './contact.html',
     './src/**/*.{html,js}',
     './header.html',
-    './footer.html',
+    './public/**/*.html',
   ],
   theme: {
     extend: {},
