@@ -6,8 +6,8 @@ export default {
             input: {
                 main: 'index.html',
                 about: 'about.html',
-                contact: 'contact.html'
-                vets: 'vets.html'
+                contact: 'contact.html',
+                vets: 'vets.html',
                 startups: 'startups.html'
             }
         }
