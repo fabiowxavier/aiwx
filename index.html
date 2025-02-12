@@ -1,6 +1,8 @@
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AIWX</title>
 
@@ -21,3 +23,67 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
 
 </head>
+
+<body class="text-gray-800">
+    <header class="bg-gray-900" id="navbar-container"></header>
+    <main>
+        <div class="py-16 sm:py-10">
+            <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+                <div class="mx-auto max-w-2xl">
+                    <h2 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">AI Consultant
+                        for the Veterinary Sector</h2>
+                    <p class="mt-6 text-lg/8 text-white">We’re a dynamic group of individuals who are passionate
+                        about what we do and dedicated to delivering the best results for our clients.</p>
+                </div>
+                <ul role="list"
+                    class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 lg:gap-8 justify-center">
+                    <!-- Vet Card -->
+                    <li class="rounded-2xl bg-gray-800 px-8 py-10">
+                        <a href=""><img class="vet-img mx-auto w-48 h-48 md:w-56 md:h-56"
+                                src="/static/images/dog-removebg-preview.svg" alt=""></a>
+                        <h2 class="mt-6 text-lg font-semibold tracking-tight text-white">For Vets</h2>
+                        <p class="text-sm text-gray-400">If you own a veterinary business, click below to see how I can
+                            support your business.</p>
+                        <div class="mt-6 flex justify-center">
+                            <button class="card-button text-white px-4 py-2 rounded-lg">Click
+                                here</button>
+                        </div>
+                    </li>
+
+                    <!-- StartUp Card -->
+                    <li class="rounded-2xl bg-gray-800 px-8 py-10">
+                        <a href=""><img class="startup-img mx-auto w-48 h-48 md:w-56 md:h-56"
+                                src="/static/images/start-up-removebg-preview.svg" alt=""></a>
+                        <h3 class="mt-6 text-lg font-semibold tracking-tight text-white">For Startups</h3>
+                        <p class="text-sm text-gray-400">If you own a startup, click below to see how I can support your
+                            business.</p>
+                        <div class="mt-6 flex justify-center">
+                            <button class="card-button text-white px-4 py-2 rounded-lg">Click
+                                here</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900" id="footer-container"></footer>
+    <script>
+    // Fetch and load the header
+        fetch('/src/components/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            })
+            .catch(error => console.error('Failed to load header:', error));
+        
+        // Fetch and load the footer
+        fetch('/src/components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            })
+            .catch(error => console.error('Failed to load footer:', error));</script>
+</body>
+
+</html>
