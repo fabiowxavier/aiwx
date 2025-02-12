@@ -70,7 +70,7 @@
     <footer class="bg-gray-900" id="footer-container"></footer>
     <script>
     // Fetch and load the header
-        fetch('/src/components/header.html')
+        fetch('/components/header.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('navbar-container').innerHTML = html;
@@ -78,7 +78,7 @@
             .catch(error => console.error('Failed to load header:', error));
         
         // Fetch and load the footer
-        fetch('/src/components/footer.html')
+        fetch('/components/footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-container').innerHTML = html;
