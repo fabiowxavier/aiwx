@@ -8,7 +8,12 @@ module.exports = {
     './public/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'deep-purple': '#412b68',
+        'light-blue' : '#1ac8db'
+      }
+    },
   },
   plugins: [],
 }
