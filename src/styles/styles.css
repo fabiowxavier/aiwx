@@ -103,6 +103,11 @@ body {
     filter: brightness(0) invert(1);
 }
 
+.startuppage-img {
+    filter: brightness(100%) invert(100%) contrast(100%);
+    }
+    
+
 .card-button {
     color: white;
     background-color: #1ac8db;
