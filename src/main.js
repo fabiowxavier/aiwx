@@ -20,7 +20,7 @@ fetch('/footer.html')
 
 document.addEventListener("DOMContentLoaded", function () {
     VANTA.NET({
-        el: "body",  // Apply the background to the whole page
+        el: "#vanta-bg",  // Apply the background to the whole page
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0xff3f81,         // Custom color
-        backgroundColor: 0x23153c, // Background color
+        color: 0x1ac8db,         // Custom color
+        backgroundColor: 0x412b68, // Background color
         points: 10,             // Density of points
         maxDistance: 20,        // Maximum connection distance
         spacing: 15,            // Spacing between points
