@@ -25,14 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
-        minWidth: 200.00,
+        minWidth: 600.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x1ac8db,         // Custom color
+        color: 0x18528a,         // Custom color
         backgroundColor: 0x1B263B, // Background color
         points: 10,             // Density of points
         maxDistance: 20,        // Maximum connection distance
         spacing: 15,            // Spacing between points
-        showDots: false         // Whether to show dots
+        showDots: true         // Whether to show dots
     });
 });
+
