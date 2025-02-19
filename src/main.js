@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
         scale: 1.00,
         scaleMobile: 1.00,
         color: 0x1ac8db,         // Custom color
-        backgroundColor: 0x412b68, // Background color
+        backgroundColor: 0x1B263B, // Background color
         points: 10,             // Density of points
         maxDistance: 20,        // Maximum connection distance
         spacing: 15,            // Spacing between points
-        showDots: true          // Whether to show dots
+        showDots: false         // Whether to show dots
     });
 });
