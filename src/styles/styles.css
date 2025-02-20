@@ -8,6 +8,7 @@ html, body {
     width: 100%;
     min-height: 100vh; 
     height: auto; 
+    font-family: Montserrat, Arial, sans-serif;
 }
 
 body {
@@ -30,6 +31,23 @@ body {
         background-position: 0% 50%;
     }
 }
+
+/* typography */
+
+.gradient-text {
+    font-weight:;
+    background: linear-gradient(360deg, 
+                                #412b68 0%, 
+                                #18528a 25%, 
+                                #0292b7 50%, 
+                                #1ac8db 75%, 
+                                #412b68 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
 
 /* Navbar */
 .nav {
