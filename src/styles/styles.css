@@ -133,8 +133,8 @@ body {
 
 .card-button {
     color: #1B263B;
-    background-color: #1ac8db;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: #1ac8db !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important;
 }
 
 .card-button:hover {
