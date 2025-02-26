@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// carousel
+
 document.addEventListener("DOMContentLoaded", function () {
     const carouselItems = document.querySelectorAll("[data-carousel-item]");
     const indicators = document.querySelectorAll("[data-carousel-slide-to]");
