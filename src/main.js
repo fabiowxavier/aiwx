@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function startAutoSlide() {
         clearInterval(interval); 
-        interval = setInterval(nextSlide, 4500); // Auto-slide every 5 seconds
+        interval = setInterval(nextSlide, 8000); // Auto-slide every 5 seconds
     }
 
     // Event listeners for buttons
