@@ -1,1 +1,1 @@
-# ai-wx.com
+# AiWX
