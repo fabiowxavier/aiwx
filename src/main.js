@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const carouselItems = document.querySelectorAll("[data-carousel-item]");
     const indicators = document.querySelectorAll("[data-carousel-slide-to]");
+    if (!carouselItems.length) return;
     let activeIndex = 0;
     let interval; 
 
@@ -76,12 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Event listeners for buttons
-    document.querySelector("[data-carousel-next]").addEventListener("click", function () {
+    document.querySelector("[data-carousel-next]")?.addEventListener("click", function () {
         nextSlide();
         startAutoSlide(); // Restart auto-slide after manual interaction
     });
 
-    document.querySelector("[data-carousel-prev]").addEventListener("click", function () {
+    document.querySelector("[data-carousel-prev]")?.addEventListener("click", function () {
         prevSlide();
         startAutoSlide(); // Restart auto-slide after manual interaction
     });
